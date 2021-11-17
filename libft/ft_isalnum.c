@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 20:33:15 by yeocho            #+#    #+#             */
-/*   Updated: 2021/11/17 20:33:16 by yeocho           ###   ########.fr       */
+/*   Created: 2021/11/17 20:32:52 by yeocho            #+#    #+#             */
+/*   Updated: 2021/11/17 20:48:09 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-#endif
+int	ft_isalnum(int c)
+{
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
+}
