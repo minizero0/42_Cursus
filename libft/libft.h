@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 20:33:15 by yeocho            #+#    #+#             */
-/*   Updated: 2021/11/18 18:01:42 by yeocho           ###   ########.fr       */
+/*   Updated: 2021/11/19 13:11:24 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
-int	main(void);
 
 #endif
