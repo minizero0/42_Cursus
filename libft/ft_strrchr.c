@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	index = s;
 	while (*s)
 		s++;
-	while (*s >= *index)
+	while (s >= index)
 	{
 		if (*s == (unsigned char *)c)
 		{
