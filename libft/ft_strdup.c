@@ -14,5 +14,18 @@
 
 char	*strdup(const char *s1)
 {
+    char    *ret;
+    int     index;
 
+    index = 0;
+    ret = (char *)malloc(sizeof(char) * (ft_strlen(s1) * + 1));
+    if (!ret)
+        return (NULL);
+    while (s1[index])
+    {
+        ret[index] = s1[index];
+        index++;
+    }
+    ret[index] = '\0';
+    return (ret);
 }
