@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 17:44:48 by yeocho            #+#    #+#             */
-/*   Updated: 2021/11/26 17:54:25 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/21 11:21:51 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	if (*needle == '\0')
 		return ((char *)haystack);
 	haystack_len = ft_strlen(haystack);
-	needle_len = ft_strlen(haystack);
+	needle_len = ft_strlen(needle);
 	if (haystack_len < needle_len || len < needle_len)
 		return (NULL);
 	if (haystack_len > len)
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		size = haystack_len;
 	while (size >= needle_len)
 	{
-		if (ft_memcmp(haystack, needle, needlee_len) == 0)
+		if (ft_memcmp(haystack, needle, needle_len) == 0)
 			return ((char *)haystack);
 		haystack++;
 		size--;
