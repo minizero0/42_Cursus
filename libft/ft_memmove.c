@@ -6,23 +6,23 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 14:22:40 by yeocho            #+#    #+#             */
-/*   Updated: 2021/11/22 14:32:53 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/21 10:56:42 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	*memmove(void *dest, const void *str, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*tmp;
 	const char	*s;
 
-	if (!dest && !str)
+	if (!dest && !src)
 		return (NULL);
-	if (dest <= str)
+	if (dest <= src)
 	{
 		tmp = dest;
-		s = str;
+		s = src;
 		while (n--)
 			*tmp++ = *s++;
 	}
