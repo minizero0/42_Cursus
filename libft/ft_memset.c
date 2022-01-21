@@ -6,21 +6,21 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 21:10:08 by yeocho            #+#    #+#             */
-/*   Updated: 2021/11/17 21:19:44 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/21 10:49:41 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int value, size_t num)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*str;
+	unsigned char	*ptr;
 
-	str = ptr;
-	while (num)
+	ptr = s;
+	while (n)
 	{
-		*str++ = (unsigned char)value;
-		num--;
+		*ptr++ = (unsigned char)c;
+		n--;
 	}
-	return (ptr);
+	return (s);
 }
