@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 13:59:36 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/19 14:06:31 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/22 17:05:09 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (fd < 0)
-		return;
+		return ;
 	if (n == -2147483648)
 	{
 		ft_putnbr_fd(n / 10, fd);
