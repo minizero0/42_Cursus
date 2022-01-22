@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:43:34 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/18 00:44:14 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/22 17:02:36 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-    if (!s || fd < 0)
-        return ;
-    while (*s)
-    {
-        ft_putchar_fd(*s, fd);
-        s++;
-    }
+	if (!s || fd < 0)
+		return ;
+	while (*s)
+	{
+		ft_putchar_fd(*s, fd);
+		s++;
+	}
 }
