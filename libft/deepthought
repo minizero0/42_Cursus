@@ -1,0 +1,19 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+joyeongmin-ui-MacBook-Pro.local
+Darwin 21.1.0 x86_64
+$> date
+2022년 1월 23일 일요일 00시 53분 30초 KST
+$> gcc --version
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin21.1.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin21.1.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= Compiling libft ==============================================================
+Missing Makefile, can't compil library.

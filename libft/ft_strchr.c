@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:41:15 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/21 11:05:39 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/23 01:13:18 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	const char	*start;
-
-	start = s;
-	while (*s)
+	while (*s != '\0')
 	{
-		s++;
-	}
-	while (s >= start)
-	{
-		if (*s == (unsigned char)c)
+		if (*s == c)
 			return ((char *)s);
-		s--;
+		++s;
 	}
-	return (NULL);
+	if (c == '\0')
+		return ((char *)s);
+	return (0);
 }

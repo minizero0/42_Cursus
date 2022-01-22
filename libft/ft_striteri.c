@@ -6,8 +6,23 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:15:04 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/18 00:15:08 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/23 00:59:13 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_striter(char *s, void (*f)(char *s))
+{
+	int	i;
+
+	i = 0;
+	if (s != NULL && f != NULL)
+	{
+		while (s[i] != '\0')
+		{
+			f(&s[i]);
+			i++;
+		}
+	}
+}

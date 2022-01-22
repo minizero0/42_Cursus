@@ -6,13 +6,13 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:14:06 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/19 16:16:06 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/23 01:23:02 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);

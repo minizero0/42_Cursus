@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 15:24:27 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/22 17:24:45 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/23 01:21:39 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ t_list	*ft_lstnew(void *content)
 	if (!list)
 		return (NULL);
 	list->next = NULL;
-	list->conteent = content;
+	list->content = content;
 	return (list);
 }
