@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 16:25:51 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/21 11:14:12 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/22 17:57:43 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		n--;
 		str++;
 	}
-	return (NULL);`
+	return (NULL);
 }
