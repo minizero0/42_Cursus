@@ -6,16 +6,16 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 00:22:30 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/18 00:22:33 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/22 17:01:35 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-void    ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    if (fd < 0)
-        return ;
-    write(fd, &c, 1);
+	if (fd < 0)
+		return ;
+	write(fd, &c, 1);
 }
