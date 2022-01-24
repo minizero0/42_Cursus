@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 20:33:15 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/23 01:42:40 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/25 01:57:12 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }		t_list;
-void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
