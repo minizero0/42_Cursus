@@ -1,21 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 18:14:09 by yeocho            #+#    #+#             */
-/*   Updated: 2022/02/16 21:35:26 by yeocho           ###   ########.fr       */
+/*   Created: 2022/02/16 21:22:12 by yeocho            #+#    #+#             */
+/*   Updated: 2022/02/16 21:33:48 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-
-# include <stdlib.h>
-
-int		get_next_line(int fd, char **line);
-char	*ft_strjoin(char *s1, char *s2);
-char	*ft_strdup(const char *s1);
-#endif
+#include "get_next_line.h"
+#include <unistd.h>
