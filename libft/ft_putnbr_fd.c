@@ -6,12 +6,12 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 13:59:36 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/22 17:05:09 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/23 01:15:31 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
+#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -31,6 +31,6 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		if (n > 9)
 			ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd(('0' + n & 10), fd);
+		ft_putchar_fd(('0' + n % 10), fd);
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 17:24:21 by yeocho            #+#    #+#             */
-/*   Updated: 2022/01/21 11:26:53 by yeocho           ###   ########.fr       */
+/*   Updated: 2022/01/22 18:41:26 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	check_range(unsigned int result, int sign)
 	else if (result > 2147483647 && sign == 1)
 		return (-1);
 	else
-		(result * sign);
+		return (result * sign);
 }
 
 int	ft_atoi(const char *str)
@@ -52,5 +52,5 @@ int	ft_atoi(const char *str)
 		result += *str - '0';
 		str++;
 	}
-	return (check_range(reuslt, sign));
+	return (check_range(result, sign));
 }
