@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeocho <yeocho@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/16 21:22:12 by yeocho            #+#    #+#             */
-/*   Updated: 2022/04/07 21:35:19 by yeocho           ###   ########.fr       */
+/*   Created: 2022/04/07 21:40:06 by yeocho            #+#    #+#             */
+/*   Updated: 2022/04/07 21:40:19 by yeocho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 #include <unistd.h>
 #define FD_MAX 256
 
